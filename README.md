@@ -7,4 +7,4 @@
 6. Убираем комментарии из файла PushMessageType, а в файле NotificationUpdater их наоборот добавляем
 7. Запускаем приложение
 8. Десериализуем объект
-9. Видим в логах: NotificationMeta(pushType=null, hasSmartReplies=true, isReminder=true)
+9. Видим в логах: NotificationMeta(pushType=null, hasSmartReplies=true, isReminder=true), хотя сам PushMessageType в NotificationMeta указан, как non-null, то есть ошибку мы получим дальше(npe), а не при десериализации объекта
